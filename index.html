@@ -1,709 +1,1754 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-<title> HEre></title>
-<link rel="canonical" href="<?php echo $pagename ?>" />
-<link rel="shortcut icon" href="img/" alt="<?php echo @$row['alt_text_logo'] ?>" />
-<meta charset="UTF-8">
-<meta name="title" content="<?php echo $meta_title ?>">
-<meta name="DC.title" lang="en" content="<?php echo $meta_title ?>">
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-<meta name="description" content="<?php echo $meta_description ?>">
-<meta name="keywords" content="<?php echo $meta_title,$keyword1 ?>, <?php echo $keyword2 ?>, <?php echo $keyword3 ?>, <?php echo $keyword4 ?>, <?php echo $keyword5 ?>, <?php echo $keyword6 ?>, <?php echo $keyword7 ?>">
-<meta name="author" content="<?php echo $keyword1 ?>">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
- <style type="text/css">
-*{
-    font-family: 'Kumbh Sans', sans-serif;
-}
-    .navbar a{font-size: 18px;
-        font-weight: bold;
-        color: black!important;
-    }
-    .btn-md{
-            padding: 15px 30px;
-            border-radius: 0;
-    }
-    .mbr-section-subsection{
-        color: #999999;
-     font-size: 20px;
-    margin-bottom: 21px;
-    }
-    .mbr-section-h1{
-        font-size: 46px;
-    }
-    .text-grey{
-        color: #404040;
-    }
-    .content1{
-        font-size: 20px;
-         color: #606060;
-    }
-    .bg-brown{
-        background: #eae8e4;
-    }
-    .display-4{
-        font-size:45px;
-    }
-    .font-weight-400{
-        font-weight: 400;
-    }
-    body{
-        color: #232323;
-    }
-    .content2{
-        font-size: 17px;
-    }
-    li a{
-        color: #ff5722;
-
-    }
-    ul{
-        list-style: circle;
-    }
-    a{
-        text-decoration: none!important;
-    }
-    .content3{
-        color: #696969;
-            font-size: 17px;
-    }
-    .contentImg:hover{
-     box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
-    transform: rotate(-2deg) scale(1.03);
-
-    }
-    .contentImg{
-        transition: all 0.3s;
-        border-radius: 30px;
-    }
-    iframe{
-        border: none!important;
-    }
-    footer{
-        background: black;
-    color: white;
-    }
-    footer a{
-         color: white!important;
-
-    }   
-    .underlineShow {
-    font-weight: inherit;
-    background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%);
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>1</title>
+<meta name="dc.title" content="1">
+<meta name="description" content="">
+<meta name="keywords" content="1">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><link rel="canonical" href="index.html">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/istockphoto-544452292-612x612.jpg" alt="1" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css"> 
+    .parallax-background {
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 30%;
-    background-position: 0 90%;
-    transition: background-size 0.2s ease-in;
-}
-.allShow:hover,.underlineShow:hover{
-        background-size: 100% 100%!important;
-     
-    background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%)!important;
-    background-repeat: no-repeat!important;
- 
-    background-position: 0 90%!important;
-    transition: background-size 0.2s ease-in!important;
-}
-.icon-button i{
-    font-size: 20px;
-    padding: 10px;
-}
-
-.icon-button i:hover{
-    color: #7CE0D3;
-}
-.bg-image{
-       background-image: linear-gradient(rgba(0,0,0,0.48),rgba(0,0,0,0.48)),url(//seodanmark.dk/wp-content/uploads/2019/11/SEO-Danmark-seo-bureau-roskilde.jpg);
-    background-size: auto,cover;
-}
- 
-.section_padding_130 {
-    padding-top: 130px;
-    padding-bottom: 130px;
-}
-.faq_area {
+    background-size: cover;
     position: relative;
-    z-index: 1;
-    background-color: #EAE8E4;
+    min-height: 500px; /* Adjust as needed */
+    width: 100%;
+    overflow: hidden;
 }
 
-.faq-accordian {
-    position: relative;
-    z-index: 1;
-}
-.faq-accordian .card {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 1.5rem;
-}
-.faq-accordian .card:last-child {
-    margin-bottom: 0;
-}
-.faq-accordian .card .card-header {
-    background-color: #ffffff;
-    padding: 0;
-    border-bottom-color: #ebebeb;
-}
-.faq-accordian .card .card-header h6 {
-    cursor: pointer;
-    padding: 1.75rem 2rem;
-    color: #3f43fd;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-.faq-accordian .card .card-header h6 span {
-    font-size: 1.5rem;
-}
-.faq-accordian .card .card-header h6.collapsed {
-    color: #070a57;
-}
-.faq-accordian .card .card-header h6.collapsed span {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
-.faq-accordian .card .card-body {
-    padding: 1.75rem 2rem;
-}
-.faq-accordian .card .card-body p:last-child {
-    margin-bottom: 0;
-}
-.special-content .row-item {
-    padding: 3rem;
-    padding-top: 3.7rem;
-    height: 100%;
-}
-.special-content .row-item.card1 {
-    background:  #eae8e4;
-}
-.special-content .row-item.card2 {
-    background:#eddad8;
-}
- .special-content .row-item.card3 {
-    background: #c1bebe;
-}
- .special-content .row-item.card4 {
-    background: #bcd9df;
-}
-.special-content .card-img {
-    margin-bottom: 1.7rem;
-    text-align: left;
-}
-.special-content .item-wrapper {
-    margin-bottom: 1.5rem;
-}
-.yacss-card-title {
-    margin-bottom: 1rem;
-}
-.yacss-iconfont {
-    background-color: #000000;
-    font-size: 30px;
-    height: 56px;
-    min-width: 56px;
-    padding: 0.7rem;
-    padding-top: 13px;
-    color: #fff;
-    border: 1px solid #000000;
-    border-radius: 50%;
-}
-
-@media only screen and (max-width: 575px) {
-    .support-button p {
-        font-size: 14px;
-    }
-}
-
-.support-button i {
-    color: #3f43fd;
-    font-size: 1.25rem;
-}
-@media only screen and (max-width: 575px) {
-    .support-button i {
-        font-size: 1rem;
-    }
-}
-
-.support-button a {
-    text-transform: capitalize;
-    color: #2ecc71;
-}
-@media only screen and (max-width: 575px) {
-    .support-button a {
-        font-size: 13px;
-    }
-}
-.news-widget-border{
-    border: 1px solid #607d8b2e;
+.parallax-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    margin: 100px auto; /* Creates space for parallax effect */
+    max-width: 80%;
     border-radius: 5px;
-    padding: 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+@media only screen and (max-width:1000px) {
+. {
+min-height: 0px !important;
+}
+.y43d62c46e128758e02cde8ffb61a0ea4 {
+font-size: 20px;
+}
+.w53773391d81a0a57b5d24274f94ff313 {
+font-size: 15px !important;
+}
+.ef62f87dc682b98776ae060ddb3c823bc{
+padding-bottom: 0px !important;
+}
+} 
+.content-image-below {
+    margin: 20px 0;
+    text-align: center;
+}
 
+  
+/* For background image */
+.content-with-bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative;
 }
-.icon-button i:hover{
-       background: white;
-    color: #ffc107;
-    border-radius: 50%;
-    width: 10mm;
-    text-align: center;
-    height: 10mm;
+
+.content-over-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
 }
-.icon-button  i{
-     
-    
+
  
-    border-radius: 50%;
-    width: 10mm;
-    text-align: center;
-    height: 10mm;
+ 
+
+/* Text container */
+.text-container {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 1rem;
+}
+ 
+
+ /* Main content container */
+.content-with-side-images {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Headers should always be full width */
+.content-with-side-images h4 {
+    width: 100%;
+    clear: both;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* Regular paragraphs should be full width by default */
+.content-with-side-images p {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Image-text pair container */
+.image-text-pair {
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Image container - floated */
+.image-container {
+    width: 50%;
+    
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Left-aligned image */
+.image-align-left .image-container {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+/* Right-aligned image */
+.image-align-right .image-container {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text that flows around the image */
+.text-flow {
+    display: inline; /* Allows text to flow around floated elements */
+}
+
+/* Clearfix */
+.clearfix {
+    clear: both;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%;
+        float: none !important;
+        margin: 0 0 20px 0 !important;
+        padding: 0;
+    }
+    
+    .text-flow {
+        display: block;
+    }
+}
+
+
+</style><style type="text/css">
+.nav-item{
+margin-top: 10.5px;
+margin-bottom: 10px;
+padding-left: 7.2px;
+padding-right: 7.4px;
+}
+.yc3669624218154d1076712bf33d23855 .card:last-child{
+margin-bottom: 0;
+}
+.cee47f646fcf7efdacd5265215a9c5ee4{
+font-size:19.5px;
+font-weight: bold;
+}
+footer *{
+font-size:19px!important;
+color:#838383!important;
+line-height: 1.5;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card1 *{
+color:#000000;
+}
+.nav-link{
+color: #090909 !important;
+}
+.t03b529695139f01cd8b30364e7cddd35{
+background: rgba(0,0,0,0.6);
+text-align: center;
+}
+.xad157fbdea5c6f4cbdb4d6668a0af0d4{
+background: #ffffff;
+}
+.z12043a6bccfa526d6839b95f0c10f958{
+color: #ffffff;
+}
+.e4b07e6ad9001df806da91456f74bada2 h3{
+margin: 3.4px 0;
+font-size: 13.5px;
+font-weight: 500;
+color:#141414;
+}
+.align-self-stretch{
+ms-flex-item-align: stretch!important;
+align-self: stretch!important;
+}
+.navbar a{
+font-size: 18.1px;
+}
+.xbdb28fce96b01d7485f84f1a732d9504 *{
+color: #ffffff;
+}
+footer a{
+color:  #838383!important;
+text-decoration: underline!important;
+}
+.xf7f39ea842a3131a0747cdce4de73dfe{
+font-size: 13.5px;
+}
+.card3 a{
+color:#ff6871!important;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card4 *{
+color:#000000;
+}
+.v3d5979a5ec1d5d8612f8a528c4cb91c4{
+cursor: pointer;
+background: #ffffff;
+width: 100%;
+max-width: 350.1px;
+margin: 0 auto;
+padding: 19.5px;
+border-radius: 5.3px;
+border: solid #fbfbfb 0px;
+transition: .3s transform ease-in-out;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card{
+background-color: transparent;
+border: none;
+}
+.d279dfaa7eb98a1fc4a06c77b413a3a04{
+height: 100%;
+object-fit: none;
+}
+li a{
+color: #ff626b;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card .card-img span{
+font-size: 60.1px;
+background: linear-gradient(45deg, #ffaeb2,#ae98ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.wcbfe0cf542163e3e67b1569cf429baf2,p{
+font-size:17.7px;
+}
+.yc3669624218154d1076712bf33d23855 .card .card-header.collapsed{
+color: #090c59;
+}
+.ee29e8ec6898de529b1c209bb585f15bd{
+font-size:48px!important;
+}
+.card1 a{
+color:#ff656e!important;
+}
+.xad157fbdea5c6f4cbdb4d6668a0af0d4 *{
+color: #010101!important;
+}
+ul{
+list-style: circle;
+}
+.e4b07e6ad9001df806da91456f74bada2 .first{
+color: #090909;
+display: flex;
+align-items: center;
+margin-bottom: 9.9px;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 h4{
+font-size:20px!important;
+}
+.wa0f382ad3bdb97734da7323150d7ebe5{
+text-decoration: underline!important;color:#ff6b74!important
+}
+.bfeb42833c74df0752c20b7a7e28bc9c5{
+width: 100%;
+max-height: 719.8px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.v3d5979a5ec1d5d8612f8a528c4cb91c4 a{
+color: black;
+font-size: 16.2px;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.card2 a{
+color:#ff666f!important;
+}
+footer ul{
+padding-left: 0px!important;
+list-style: none;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card3 *{
+color:#000000;
+}
+.underline .line{
+width: 5rem;
+height: 3px;
+background: linear-gradient(90deg, #b09aff,#ff5b64);
+display: inline-block;
+}
+footer{
+padding-top:59.9px;
+padding-bottom:60px;
+}
+.directions h5{
+font-size:15.9px;
+}
+a{
+text-decoration: none!important;
+}
+.w0125ff699d3e144d11ac3bc1c6e510bb i:hover{
+background: black;
+color:#ffd6da;
+border-radius: 50%;
+width:10mm;
+text-align:center;
+height:10mm;
+}
+.div1 h2{
+font-size:48px!important;
+}
+.yc9da53680c3f6e4a8c4cf369a3fcad67 *{
+font-size:19px!important;
+color: #787878;
+}
+.yc3669624218154d1076712bf33d23855{
+position: relative;
+z-index: 1;
+}
+.xbdb28fce96b01d7485f84f1a732d9504{
+background: #0a0a0a;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card1{
+background:#ffffff!important ;
+}
+.display-2{
+font-size: 45.4px;
+}
+.img-overlay{
+position: relative;
+min-height: 599.9px;
+}
+.yc3669624218154d1076712bf33d23855 .card .card-header h6.collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.z2791f2a84cf24004cc7fc5553229d0d7:hover{
+background-size: 100% 100%!important;
+color:#fecbcf!important;
+background:#ffffff!important;
+background-repeat: no-repeat!important;
+background-position: 0 90%!important; 
+transition: background-size 0.2s ease-in!important;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card-title{
+text-align: left;
+color: #ffb0b4;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card4{
+background:#ffffff!important;
+}
+.t03b529695139f01cd8b30364e7cddd35 *{
+color:white!important;
+}
+.btn-md{
+padding:14.7px 30.2px;
+border-radius: 0;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 p ,.yb764d6d7e790d34bfec9e4b98b0d1802 label{
+font-size:18px!important;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card3{
+background:#ffffff!important;
+}
+.t1dadf23caadd8672b19f8df1196d725e{
+position: relative;
+z-index: 1;
+background: #0a0a0a;
+}
+.v3d5979a5ec1d5d8612f8a528c4cb91c4 h3{
+font-size:16.4px;
+margin-top: 9.9px;
+}
+.yc3669624218154d1076712bf33d23855 .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.u269313968110c8fbc7af88dd6045e6d2{
+list-style: none;
+font-size:19px!important;
+}
+.f2df00b366ebfb2de6759d915000f6734{
+color: white;
+}
+.yc3669624218154d1076712bf33d23855 .card .card-header span{
+font-size: 1.5rem;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card2{
+background:#ffffff!important;
+}
+.bg-brown{
+background: #f7f5f1;
+}
+.w0125ff699d3e144d11ac3bc1c6e510bb{
+font-size:20.1px;
+padding:9.8px;
+color: black;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802 .card2 *{
+color:#000000;
+}
+.yc3669624218154d1076712bf33d23855 .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+.yc3669624218154d1076712bf33d23855 .card .card-header{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: black;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.e4b07e6ad9001df806da91456f74bada2 p{
+font-size:13.1px;
+font-weight: 400;
+color: #0b0b0b;
+}
+.dropdown-menu{
+max-width:799.9px;
+overflow-x: auto;
+}
+.w53773391d81a0a57b5d24274f94ff313{
+color: white;
+font-size: 19.9px;
+margin-bottom: 21.4px;
+}
+.c9d7123e859358992b6bf19785811d24c{
+font-size:19px!important;
+}
+.yb764d6d7e790d34bfec9e4b98b0d1802{
+padding-top:89.5px;
+padding-bottom:89.9px;
+background-color:#ffffff;
+}
+*{
+font-family: '', sans-serif;
+}
+iframe{
+border: none!important;
+}
+.e4b07e6ad9001df806da91456f74bada2 img{
+height:44.6px;
+margin-right: 10.5px;
+}
+.b382ad363e2990b6379cbac3f6bc73b9d{
+font-size: 30.5px!important;
+}
+.fa-star,.fa-star-half-alt{
+font-size: 15.5px;
+}
+.ccd2f26a7d3a1c6b61bedef670ecbea67{
+max-height: 299.5px;
+overflow-y:auto; 
+}
+.w0125ff699d3e144d11ac3bc1c6e510bb i{
+border-radius: 50%;
+width: 10mm;
+text-align: center;
+line-height: 37px;
+height: 10mm;
+}
+.yc3669624218154d1076712bf33d23855 .card .card-body{
+padding: 1.75rem 2rem;
+}
+.e4b07e6ad9001df806da91456f74bada2{
+padding: 19.5px;
+border-radius: 5px;
+border-width: 0px; 
+background: #fcfcfc;
+}
+.b5682e1ff55b1527414c32b890c1b0359{
+background-color:#fe5270!important;
+border-color:#fe5270!important;
+color:#ffffff!important;
+}
+@media only screen and (max-width:1000px){
+.img-overlay{
+min-height: 159.6px!important;
+}
+.ef62f87dc682b98776ae060ddb3c823bc{
+padding-bottom: 0px!important;
+}
+}
+@media only screen and (max-width: 1000px) {
+.ee29e8ec6898de529b1c209bb585f15bd{
+font-size: 20.2px!important;
+}
+.display-2{
+font-size: 17.9px!important;
+}
+.yc9da53680c3f6e4a8c4cf369a3fcad67{
+font-size: 11.5px!important;
+}
+.wcbfe0cf542163e3e67b1569cf429baf2{  
+font-size: 14.2px!important;
+}.xad157fbdea5c6f4cbdb4d6668a0af0d4 .row:nth-child(2) {
+flex-direction: column-reverse;
+}}
+@media (min-width: 1250px){
+.container {
+max-width: 1247.7px !important;
+}
+footer .container  {
+max-width: 1200.3px !important;
+}
+}
+@media (min-width: 1330px)
+{
+.container {
+max-width: 1329.8px !important;
+}
+}
+@media (min-width: 1430px)
+{
+.container {
+max-width: 1430.3px !important;
+}
 }
 </style>
-  
 
-</head>
-    
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "LocalBusiness", 
+"logo": "img/istockphoto-544452292-612x612.jpg",
+"image": "img/istockphoto-544452292-612x612.jpg",
+"url": "",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"url": "index.html","name": "","description": "",
+"disambiguatingDescription": ""},
+"accessibilitySummary": ""},
+"keywords": [""],
+"award": ["Best "],
+"teaches": [""],
+"educationalUse": [""],
+"text": [""],
+"workExample": {
+"about": {"url": "index.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "index.html"}
+},
+"hasPart":[
+]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "1",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4","ratingCount": "137",
+"reviewCount": "173"
+}
+}
+</script></head>
 <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5 pt-3 pb-3">
-  <a class="navbar-brand" href="#"><img src="https://yacss.site/wp-content/uploads/2022/03/logo-300x125.png" width="150px"  ></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar-expand-lg navbar">
+<a class="navbar-brand" href="index.html"  >
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      
-      
-      <li class="nav-item mt-2 pr-md-4 dropdown">
-        <a class="nav-link allShow dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-          Services
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item mt-2 pr-md-4">
-        <a href="" class="nav-link allShow   ">Contact</a>
-      </li>
-         <li class="nav-item  ">
-      <a class="btn btn-md btn-warning display-4" href="tel:+1-434-423-4100">(434) 423-4100</a>
-         </li>
-    </ul>
-     
-  </div>
+<img alt="" src="img/istockphoto-544452292-612x612.jpg"  width="100px" ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon fa fa-bars"></span>
+</button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="align-items-center ml-auto navbar-nav">
+<li class="nav-item"><a class="nav-link z2791f2a84cf24004cc7fc5553229d0d7" href="index.html"  >1</a></li><li class="nav-item"><a class="z2791f2a84cf24004cc7fc5553229d0d7 nav-link" href="hh.html"  >hh</a></li><li class="nav-item"><a class="z2791f2a84cf24004cc7fc5553229d0d7 nav-link" href="3.html"  >3</a></li><li class="nav-item">
+<a class="nav-link z2791f2a84cf24004cc7fc5553229d0d7" href="about-us.html" rel="nofollow" >About Us</a></li>
+</ul>
+</div>
 </nav>
- 
-<div class="container-fluid bg-image pb-5">
-    <div class="container pt-5 pb-5 ">
-        <div class="row">
-            <div class="col-lg-12 text-center ">
-                <p class="mb-0 mbr-section-subsection"><b>Keyword 1</b></p>
-                <h1 class="mbr-section-h1 text-white  ">Meta title - Pagename</h1> </div>
-            <div class="col-lg-8 pt-5">
-                <iframe width="100%" height="400" style="border-radius: 5px;" src="https://youtube.com/embed/" title="<?php echo $keyword1 ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>KEYWORD 1</iframe>
-            </div>
-            <div class="col-lg-4  pt-5">
-                <p class="content1 text-light"> Content 1 : Lynchburg Tree Service provides free quotes for professional tree maintenance from local contractors near you including:
-                    <ul>
-                        <li>Tree Trimming & Pruning</li>
-                        <li>Tree Felling & Removal</li>
-                        <li>Stump Grinding & Removal</li>
-                        <li>Tree & Land Clearing</li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-    </div>
+<div class="container-fluid img-overlay ef62f87dc682b98776ae060ddb3c823bc">
+<img  src="img/175124231554988.png" width="100%" class="bfeb42833c74df0752c20b7a7e28bc9c5" alt="1" title="1 "></div>
+<div class="align-items-center container-fluid d-flex xad157fbdea5c6f4cbdb4d6668a0af0d4 img-overlay pb-5"><div class="container">
+<div class="row justify-content-center">
+<div class="text-center pt-4 text-dark col-lg-12 " id=""><h1 class="ee29e8ec6898de529b1c209bb585f15bd font-weight-bold text-dark">1</h1></div><div class="col-lg-12  text-center">
+<div class="f2df00b366ebfb2de6759d915000f6734 wcbfe0cf542163e3e67b1569cf429baf2 text-dark c9d7123e859358992b6bf19785811d24c">The APMG Agile Business Analyst Practitioner at Knowledge Train offers a comprehensive understanding of agile methodologies tailored for business analysis. This certification is specifically designed to equip professionals with the essential skills and knowledge needed in today's agile workplaces. By pursuing this certification, individuals gain insights into effective collaboration, stakeholder engagement, and iterative development. The course covers fundamental principles and practices that enhance one's ability to work effectively within agile environments. The certification programme emphasises the importance of adaptive planning and requirements management. Participants learn how to facilitate workshops and gather requirements in an agile context. This approach ensures that the analysis aligns with changing business needs and customer feedback. Furthermore, candidates are taught to effectively communicate with stakeholders across various levels of an organisation. This skill is vital for ensuring clarity and understanding throughout the project lifecycle. Another key aspect of the training is the focus on delivering value incrementally. This principle encourages business analysts to work collaboratively with agile teams, ensuring that each iteration provides tangible benefits. The programme also covers various agile frameworks, including Scrum and Kanban, allowing candidates to understand different methodologies. This knowledge empowers them to select the most suitable framework for their projects. Moreover, the APMG Agile Business Analyst Practitioner certification enhances critical thinking and problem-solving skills. Participants engage in practical exercises that simulate real-world scenarios, fostering an environment of learning and application. These exercises help candidates to develop strategies for overcoming challenges in agile environments, preparing them for actual project demands. The training also addresses the significance of continuous improvement and feedback loops within agile projects. By understanding these concepts, business analysts can contribute to refining processes and enhancing team performance. This iterative learning approach is crucial in maintaining agility and responsiveness in business analysis. Additionally, the APMG Agile Business Analyst Practitioner programme is recognised globally, making it a valuable asset for professionals. Obtaining this certification can lead to improved job prospects and career advancement opportunities. Employers increasingly seek candidates with agile experience and certifications, recognising the benefits they bring to organisations. In summary, the APMG Agile Business Analyst Practitioner at Knowledge Train offers an enriching experience for aspiring business analysts. The course equips participants with necessary skills, preparing them to excel in agile environments. With a focus on practical application and collaboration, this certification unlocks numerous career opportunities. Investing in this training is a strategic move for professionals looking to thrive in the agile landscape.<p><a class="tb476c1f8e40e353e8b3094d2a05b4ecd" href="hh.html">hh</a></p></div>
 </div>
-
-
-<div class="container-fluid py-4 bg-brown">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-5">
-                
-                <h2 class="display-4 mt-2 font-weight-400">Keyword 2
-                </h2> 
-                <ul>
-                        <li><a href="">Keyword 1</a></li>
-                        <li><a href="">Keyword 2</a></li>
-                        <li><a href="">Keyword 3</a></li>
-                        <li><a href="">Keyword 4</a></li>
-                        <li><a href="">Keyword 5</a></li>
-                        <li><a href="">Keyword 6</a></li>
-                        <li><a href="">Keyword 7</a></li>
-                    </ul>
-            </div>
-            <div class="col-lg-7 pt-5 content2">
-                <p> Content 2 : Choosing the right tree care company in Lynchburg VA is an important decision, and there are many factors to consider before hiring a professional. Some companies will offer monthly tree trimming, while others will offer specialized services. The best option is to choose a local arborist, who will come to your property and provide you with expert advice and assistance. A reputable tree care company will have years of experience and will have access to the necessary permits and insurance. Choosing the right tree care company in Lynchburg VA will require some research. Before you hire a company, make sure you ask them if they have proper liability and workers compensation insurance. This is crucial to protect you from injury, and will help prevent damages from occurring. If an arborist is not insured, you could be held liable for injuries caused by the work. A lack of insurance could also mean the company is not covered in case of an accident. The company's employees may also cause damage to your property or surrounding structures if they are not properly trained and insured. You should also ask whether the Lynchburg tree care company has insurance coverage. While most tree services in Lynchburg are insured, you should make sure that they have the proper license and insurance to perform work on your property. You should also ask for an estimate before the work begins. You should be able to see how much the cost will be before hiring a service. However, if you're unsure about how much it will cost, it's always a good idea to get a free quote from multiple companies. </p>
-            </div>
-        </div>
-    </div>
 </div>
-
-<div class="container news-widget py-5">
-            <div class="row">
-         <div class="col-md-12 item-wrapper mb-3 news-widget-border">
-            <div class="row-item d-flex card1 align-left">
-                <div>
-                <a href="" class="text-dark"><h4 class="yacss-fonts-style yacss-card-title yacss-black yacss-bold display-5">Canada police hunt remaining suspect in stabbing attacks</h4></a>
-                <p class="yacss-text yacss-fonts-style mb-0 display-7">Special Content 1: Lorem ipsum dolor amet, consecte tempor incididunt ut labore et dolore tumber tur adipisicing elit.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mauris commodo quis imperdiet massa tincidunt. Nisl rhoncus mattis rhoncus urna neque viverra justo. Leo in vitae turpis massa sed elementum.</p>
-                    </div>
-                <img style="border-radius: 10px;" referrerpolicy="no-referrer" src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HUWWFKBNNEI63PGGBB2LE2XCSY.jpg&amp;" width="150px">
-            </div>
-            <p class="mb-0 mt-4 text-muted">Posted by <i>sdf</i> on 2022-08-25</p>
-            </div>
-
-              
-
 </div>
-
 </div>
-
-<div class="container special-content pt-5">
+</div>
+</div>
+<div class="container py-5"><div class="accordion" style="cursor: pointer" id="faqAccordion1"><div class="card"><div class="py-4 card-header" id="686ab7569e782"><h4 class="collapsed mb-0" data-toggle="collapse" data-target="#content686ab7569e782" aria-expanded="true"  >About Jesper Nissen<span class="lni-chevron-up"></span></h4></div><div class="collapse" id="content686ab7569e782" data-parent="#faqAccordion1"><div class="card-body"><div class="directions container"><div class="row"><div class="text-center mt-5 col-lg-12"><h3>Driving Directions in Aalborg   </h3><hr></div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
         
-        <div class="row align-left">
-            
-            <div class="col-md-6 item-wrapper">
-            <div class="row-item card1 align-left">
-                <div class="card-img  yacss-white">
-                    <span class="yacss-iconfont  text-center fa fa-pencil">
-                         
-                    </span>
-                </div>
-                <h4 class="yacss-fonts-style yacss-card-title yacss-black yacss-bold display-5">Special Keyword 1</h4>
-                <p class="yacss-text yacss-fonts-style mb-0 display-7">Special Content 1: Lorem ipsum dolor amet, consecte tempor incididunt ut labore et dolore tumber tur adipisicing elit.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mauris commodo quis imperdiet massa tincidunt. Nisl rhoncus mattis rhoncus urna neque viverra justo. Leo in vitae turpis massa sed elementum.</p>
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9046611!3d57.0199661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1sChIJj6CAKgEzSUYRRoA8F_T10X0!2sHotel+Scheelsminde!3m2!1d57.0199661!2d9.9046611!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
                 
-            </div>
-            </div>
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
 
-             <div class="col-md-6 item-wrapper">
-            <div class="row-item card2">
-                <div class="card-img align-left yacss-white">
-                      <span class="yacss-iconfont  text-center fa fa-refresh">
-                         
-                    </span>
-                </div>
-                <h4 class="yacss-fonts-style yacss-card-title yacss-black yacss-bold display-5">Special Keyword 2</h4>
-                <p class="yacss-text yacss-fonts-style mb-0 display-7">Special Content 2: Lorem ipsum dolor amet, consecte tempor incididunt ut labore et dolore tumber tur adipisicing elit.&nbsp;Lorem ipsum dolor amet, consecte tempor incididunt ut labore et dolore tumber tur adipisicing elit.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;</p>
-           </div>
-            </div>
-
-            <div class="col-md-6 item-wrapper">
-            <div class="row-item card3">
-                <div class="card-img align-left yacss-white">
-                     <span class="yacss-iconfont  text-center fa fa-thumbs-up">
-                         
-                    </span>
-                </div>
-                <h4 class="yacss-fonts-style yacss-card-title yacss-black yacss-bold display-5">Special Keyword 3</h4>
-                <p class="yacss-text yacss-fonts-style mb-0 display-7">Special Content 3: Lorem ipsum dolor amet, consecte tempor incididunt ut labore et dolore tumber tur adipisicing elit.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mauris commodo quis imperdiet massa tincidunt. Nisl rhoncus mattis rhoncus urna neque viverra justo. Leo in vitae turpis massa sed elementum.<br></p>
-              
-            </div>
-            </div>
-
-            <div class="col-md-6 item-wrapper">
-            <div class="row-item card4">
-                <div class="card-img align-left yacss-white">
-                    <span class="yacss-iconfont  text-center fa fa-picture-o">
-                         
-                    </span>
-                </div>
-                <h4 class="yacss-fonts-style yacss-card-title yacss-black yacss-bold display-5">Special Keyword 4</h4>
-                <p class="yacss-text yacss-fonts-style mb-0 display-7">Special Content 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mauris commodo quis imperdiet massa tincidunt. Nisl rhoncus mattis rhoncus urna neque viverra justo. Leo in vitae turpis massa sed elementum.</p>
-                
-            </div>
-            </div>
-            
-        </div>
-    </div>
-
-<div class="container-fluid py-4 bg-white">
-    <div class="container py-5">
-        <div class="row">
-          
-            <div class="col-lg-6 pt-5 ">
-                 <h2 class="display-4 mt-2 font-weight-400">Keyword 3
-                </h2>
-                <p class="content3"> Content 3 : A Lynchburg tree trimming service can help you maintain and repair your trees. While most trees do not need much care, they do need time and effort to look their best. The amount of maintenance a tree needs depends on its species and the season. In most cases, trees don't require too much maintenance, but you should consider what kind of tree you have. Deciduous trees lose their leaves during the fall, which will make your yard a mess. Evergreen trees, on the other hand, shed their fruits, needles, and petals all year round.
-
-For most trees, pruning is not necessary, and you can save time and money by doing it yourself. But if your tree is overgrown, the only option is to get rid of it. A Lynchburg tree trimming service can help you remove it safely, and they are familiar with the local laws regarding tree removal. For instance, they can take down any dead or dying trees. And because they know about the laws in Lynchburg, they will also be familiar with any regulations pertaining to the removal of trees.
-
-If you're looking for an affordable and professional Lynchburg tree service, Lynchburg Tree Service is the place to go. They offer residential and commercial clients personalized tree care services. This family-owned business has been around for over 15 years, and they are proud to serve the community. They specialize in general trimming and tree removal, as well as storm damage clean up. You can even call them if you need emergency tree removal services. </p>
-            </div>
-              <div class="col-lg-6    pt-5">
-                <img class="w-100 contentImg" src="https://storage.googleapis.com/lynchburgtreeremoval/assets/images/tree-trimming-pruning-lynchburg-632x650.jpeg" alt="Lynchburg Tree Trimming and Pruning">
-                </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="container-fluid py-4 bg-brown">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-5">
-                 
-                <h2 class="display-4 mt-2 font-weight-400">Keyword 4
-                </h2> 
-                
-            </div>
-            <div class="col-lg-7 pt-5 content2">
-                <p>Content 4 :  The best time to remove a tree in Lynchburg depends on the species and age of the tree. An arborist in Lynchburg will be able to help you determine the optimal time. The best time to remove a tree is early spring. Experts in the field use a number of techniques to safely and easily remove your tree. For example, they may use a crane to safely climb up the tree and cut it up in smaller pieces.
-
-If a tree is dead, dying, or showing signs of decay, you may need to call hazardous tree removal services. This is necessary to protect property and the environment. If you don't, it could result in damages, such as electrical damage, or even death. If the damage is too severe, you can hire a professional to safely remove the hazardous tree. While it can be tempting to try to remove it yourself, it's important to remember that removing a hazardous one requires specialized equipment, refined techniques, and highly qualified arborists.
-
-A certified professional will make sure the job is done right the first time. A trained arborist will evaluate the hazards posed by trees and identify the ones that need to be removed. The trained staff will also make sure only the strongest and healthiest plants are left behind. They will make sure your property is clean after the project. These services are not only safe but also cost-effective. You should not wait any longer before calling a professional.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="container-fluid py-4 bg-white">
-    <div class="container py-5">
-        <div class="row">
-          
-            <div class="col-lg-6 pt-5 ">
-                 <h2 class="display-4 mt-2 font-weight-400">Keyword 5
-                </h2>
-                <p class="content3"> Content 5 : An ISA certified arborist is a tree care professional that can assess the overall health of your trees. In addition to this, the arborist will be able to help you determine which types of trees are best for your yard. They will also consider the space available to grow, the neighbors' trees, and any threats to your trees from diseases, insects, and weather. If your tree is too large or is too tall, an arborist can give you recommendations for what to plant in its place.
-
-Cabling and Bracing
-Apart from routine pruning and tree planting, professional tree care companies offer other services as well. For example, they may recommend installing cabling and bracing hardware for support of weak branches, such as stakes or metal stakes.
-
-Insect and Disease Management
-A Lynchburg tree care expert is trained to recognize the early warning signs of rot, insect infestation, and decay. Preventive action is a great way to save your tree and protect your property from potential damage. They also perform injected chemical treatments to combat any insects or diseases. These treatments involve spraying, which is the most common method of treatment.
-
-Tree Fertilization and Soil Care
-A Lynchburg arborist can also help you to fertilize and maintain your soil in a way that will make it more conducive for healthy growth. Additionally, the experts at Lynchburg Tree Services can help minimize the risks of flooding and erosion.</p>
-            </div>
-              <div class="col-lg-6    pt-5">
-                <img class="w-100 contentImg" src="https://storage.googleapis.com/lynchburgtreeremoval/assets/images/arborist-tree-care-and-maintenance-454x520.jpeg" alt="Lynchburg Tree Trimming and Pruning">
-                </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="container-fluid py-4 bg-brown">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-lg-5">
-               
-                <h2 class="display-4 mt-2 font-weight-400">Keyword 6
-                </h2> 
-                
-            </div>
-            <div class="col-lg-7 pt-5 content2">
-                <p> Content 6 : In Lynchburg, tree stump removal services will charge from $250 to $350 per stump. The cost will increase if the tree is large or requires additional work, such as removing multiple trees. Additionally, make sure that the price you are quoted includes the cost of clearing up debris.
-
-You should always ask for a free estimate before deciding on a particular company. Most companies will offer you a free quote before starting the job, so make sure to shop around for the best price.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-<div class="container-fluid py-4 bg-white">
-    <div class="container py-5">
-        <div class="row">
-          
-            <div class="col-lg-6 pt-5 ">
-                 <h2 class="display-4 mt-2 font-weight-400">Keyword 7
-                </h2>
-                <p class="content3">Content 7 : Land clearing is another popular service offered by professional tree removal services in Lynchburg. This involves removing vegetation from undeveloped property and can be performed for several reasons. Some homeowners might enjoy the lush grassy areas that are left in their yard, while others may wish to build patios or decks.
-
-Commercial land clearing is often necessary for building a parking lot, landscaping, or a new structure. For any reason, professional tree removal services in Lynchburg are the right choice for you.
-
-Forestry mulching equipment are large tank-like machines that uses rotary drums with teeth to shred vegetation. Some machines are also equipped with steel chippers, which are loaded with blades for shredding vegetation. Typically, these machines operate independently, but some are designed for a specific application.
-
-Other forestry mulchers should be attached to farm equipment or tracked equipment. The heavy-duty forestry mulchers can easily clear acres of vegetation in a single day. The amount of time required to clear land will depend on the terrain, the density of outgrowth, and the type of regrowth.</p>
-            </div>
-              <div class="col-lg-6    pt-5">
-                <img class="w-100 contentImg" src="https://storage.googleapis.com/lynchburgtreeremoval/assets/images/land-clearing-454x520.jpeg" alt="Lynchburg Tree Trimming and Pruning">
-                </div>
-        </div>
-    </div>
-</div>
-
-<div class="faq_area section_padding_130" id="faq">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-8 col-lg-6">
-                <!-- Section Heading-->
-                <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                    <h3><span>Frequently </span> Asked Questions</h3>
-                 
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <!-- FAQ Area-->
-            <div class="col-12 col-sm-10 col-lg-8">
-                <div class="accordion faq-accordian" id="faqAccordion">
-                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <div class="card-header" id="headingOne">
-                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How can I install this app?<span class="lni-chevron-up"></span></h6>
-                        </div>
-                        <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
-                                <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-                            </div>
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Hotel Scheelsminde</div>
+                            <div class="text-muted small">Starting Point</div>
                         </div>
                     </div>
-                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                        <div class="card-header" id="headingTwo">
-                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">The apps isn't installing?<span class="lni-chevron-up"></span></h6>
-                        </div>
-                        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
-                                <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-                        <div class="card-header" id="headingThree">
-                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Contact form isn't working?<span class="lni-chevron-up"></span></h6>
-                        </div>
-                        <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
-                                <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
-                            </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
                         </div>
                     </div>
                 </div>
-                <!-- Support Button-->
-             
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Hotel+Scheelsminde&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
             </div>
         </div>
     </div>
-</div>
-
-
-
-<div class="container px-0">
-
-<?php if($row['twittermomenturl']!=''){ ?>
-<a class="twitter-moment" href="<?php echo $row['twittermomenturl'] ?> ">SEO Danmark på Amazon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<?php }?>
-</div>
-
-
-<div class="container-fluid px-0">
-
- <iframe src="https://www.google.com/maps/d/embed?mid=1QdfA3DTAM_XKDQWZgDwHNrswNFv_FQ6s&ehbc=2E312F" width="100%" height="480"><?php echo $keyword1 ?></iframe>     
-</div>
-
-
-
-  
-<footer>
-    <div class="container py-4 pt-5" style="max-width: 1400px;">
-        <div class="row">
-  <div class="col-lg-3">
- 
-         <p>PHONE : 123123123</p>
-      
-      <p>EMAIL : huzaifaahmed34@gmail.com</p>
-     
-     <p>ADDRESS : 12312 ,Pakistans</p>
- 
- 
-     
-      <p>Company Website : <a  class="underlineShow" href="https://www.huzmark.tech">www.huzmark.tech</a></p>
-     
-    
-       </div>
-       
-       
-<div class="col-lg-3"><p class="sub">USEFULL LINKS</p>
-<p><a href="" class="underlineShow" target="_blank">Service 1</a></p>
-<p><a href="" class="underlineShow" target="_blank">Service 2</a></p>
-<p><a href="" class="underlineShow" target="_blank">Service 3</a></p>
-<p><a href="" class="underlineShow" target="_blank">Service 4</a></p>
-<p><a href="" class="underlineShow" target="_blank">Service 5</a></p>
-</div>
-
- 
-<div class="col-lg-3">
-<p class="sub">LATEST BLOGPOSTS</p>
-<p><a href=" " class="underlineShow" target="_blank">Service 1</a></p>
-<p><a href=" " class="underlineShow" target="_blank">Service 2</a></p>
-<p><a href=" " class="underlineShow" target="_blank">Service 3</a></p>
-
- 
-<p><a class="underlineShow" href="sitemap.html" >Sitemap</a></p>
- 
-</div>
-
- 
-<div class="col-lg-3">
-            <div class="social">
-                <p class="sub">Follow us</p>
-             
-                <a href=" " class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
-                   
-                        
-                <a href="" class="icon-button pinterest"><i class="fa fa-linkedin"></i><span></span></a>
-                  
-                <a href="" class="icon-button google-plus"><i class="fa fa-instagram"></i><span></span></a>
-                   
-            <a href="" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
-             
-                <a href="" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
-                
-                         
-                    <a href="" class="icon-button tumblr"><i class="fa fa-tumblr"></i><span></span></a>                      
-
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9281556!3d57.0484181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1sChIJ4Zp8lJIySUYRTwmTjzxfzXA!2sPier+5+Hotel!3m2!1d57.0484181!2d9.9281556!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
             </div>
-    </div>
-</div>
-    </div>
-    
-    
-    </footer>
+        </div>
 
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Pier 5 Hotel</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Pier+5+Hotel&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9349576!3d57.0467034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1sChIJ9_01rJQySUYRyoRKtfmxdI8!2sKOMPAS+Hotel+Aalborg!3m2!1d57.0467034!2d9.9349576!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">KOMPAS Hotel Aalborg</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=KOMPAS+Hotel+Aalborg&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9169257!3d57.0443129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1sChIJs3DThfMySUYRFob8U5j36NU!2sPrinsen+Hotel!3m2!1d57.0443129!2d9.9169257!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Prinsen Hotel</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Prinsen+Hotel&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Prinsen+Hotel/Jesper+Nissen/@57.0443129,9.9169257,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJs3DThfMySUYRFob8U5j36NU!2m2!1d9.9169257!2d57.0443129!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Prinsen+Hotel/Jesper+Nissen/@57.0443129,9.9169257,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJs3DThfMySUYRFob8U5j36NU!2m2!1d9.9169257!2d57.0443129!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Aalborg+Theater/Jesper+Nissen/@57.0469603,9.9166186,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJbwWnpvQySUYRwuFJ-GFNNxc!2m2!1d9.9166186!2d57.0469603!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Aalborg+Theater/Jesper+Nissen/@57.0469603,9.9166186,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJbwWnpvQySUYRwuFJ-GFNNxc!2m2!1d9.9166186!2d57.0469603!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Merkurvej+Bed+%26+Breakfast/Jesper+Nissen/@57.0190332,9.9077624,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJoeaIGgQzSUYRquhP3SBAo74!2m2!1d9.9077624!2d57.0190332!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Merkurvej+Bed+%26+Breakfast/Jesper+Nissen/@57.0190332,9.9077624,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJoeaIGgQzSUYRquhP3SBAo74!2m2!1d9.9077624!2d57.0190332!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Radisson+Blu+Limfjord+Hotel%2C+Aalborg/Jesper+Nissen/@57.0509693,9.9201071,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJ7yc7ZIwySUYRZIE--6MeIqg!2m2!1d9.9201071!2d57.0509693!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e3</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Radisson+Blu+Limfjord+Hotel%2C+Aalborg/Jesper+Nissen/@57.0509693,9.9201071,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJ7yc7ZIwySUYRZIE--6MeIqg!2m2!1d9.9201071!2d57.0509693!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e3" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Milling+Hotel+Gestus/Jesper+Nissen/@57.0469858,9.9147692,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJKcxAxPQySUYRuM7TkVBrt6M!2m2!1d9.9147692!2d57.0469858!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Milling+Hotel+Gestus/Jesper+Nissen/@57.0469858,9.9147692,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJKcxAxPQySUYRuM7TkVBrt6M!2m2!1d9.9147692!2d57.0469858!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Pier+5+Hotel/Jesper+Nissen/@57.0484181,9.9281556,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJ4Zp8lJIySUYRTwmTjzxfzXA!2m2!1d9.9281556!2d57.0484181!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Pier+5+Hotel/Jesper+Nissen/@57.0484181,9.9281556,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJ4Zp8lJIySUYRTwmTjzxfzXA!2m2!1d9.9281556!2d57.0484181!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Comwell+Hvide+Hus+Aalborg/Jesper+Nissen/@57.0421348,9.9118312,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJmaSKgPYySUYRAxGXumdrzNA!2m2!1d9.9118312!2d57.0421348!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Comwell+Hvide+Hus+Aalborg/Jesper+Nissen/@57.0421348,9.9118312,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sChIJmaSKgPYySUYRAxGXumdrzNA!2m2!1d9.9118312!2d57.0421348!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9194474!3d57.0478769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1sunknown!2sBudolfi+Church!3m2!1d57.0478769!2d9.9194474!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Budolfi Church</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Budolfi+Church&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.897831!3d57.0380459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1sunknown!2sKlatreparken+Aalborg!3m2!1d57.0380459!2d9.897831!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Klatreparken Aalborg</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Klatreparken+Aalborg&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9175661!3d57.0364223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1sunknown!2sLimfjordsbanen!3m2!1d57.0364223!2d9.9175661!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Limfjordsbanen</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Limfjordsbanen&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9183841!3d57.0488524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1sunknown!2sAalborg+Kloster!3m2!1d57.0488524!2d9.9183841!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Aalborg Kloster</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Aalborg+Kloster&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9155036!3d57.0431421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1sunknown!2sPark+of+Music!3m2!1d57.0431421!2d9.9155036!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Park of Music</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Park+of+Music&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9239463!3d57.0463522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1sunknown!2sChurch+of+Our+Lady!3m2!1d57.0463522!2d9.9239463!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Church of Our Lady</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Church+of+Our+Lady&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9154277!3d57.0422025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e1!4m5!1sunknown!2sDrengen+og+den+lille+havfrue+af+C.+J.+Bonnesen!3m2!1d57.0422025!2d9.9154277!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Drengen og den lille havfrue af C. J. Bonnesen</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Drengen+og+den+lille+havfrue+af+C.+J.+Bonnesen&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.932137!3d57.0465471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1sunknown!2sNordkraft!3m2!1d57.0465471!2d9.932137!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Nordkraft</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Nordkraft&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9219058!3d57.0472103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1sunknown!2sGr%C3%A5br%C3%B8drekloster+Museum!3m2!1d57.0472103!2d9.9219058!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Gråbrødrekloster Museum</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Gr%C3%A5br%C3%B8drekloster+Museum&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="row no-gutters align-items-center p-4 rounded-4 border-0 shadow" style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Map Section -->
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div style="position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d20000!2d9.9176304!3d57.0509704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1sunknown!2sH%C3%A5ndv%C3%A6rkerhuset+Aalborg!3m2!1d57.0509704!2d9.9176304!4m5!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2sJesper+Nissen!3m2!1d57.0361325!2d9.9097463!5e0"
+                    allowfullscreen
+                    loading="lazy"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="col-md-6">
+            <div class="pl-md-4">
+                
+                <!-- Subtle Heading -->
+                <h6 class="text-uppercase text-muted mb-4" style="letter-spacing: 1px; font-size: 0.85rem;">Driving Directions</h6>
+
+                <!-- Start & End Points -->
+                <div class="mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark">Håndværkerhuset Aalborg</div>
+                            <div class="text-muted small">Starting Point</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="mr-3 text-danger"><i class="fa fa-location-arrow fa-lg"></i></div>
+                        <div>
+                            <div class="font-weight-bold text-dark"></div>
+                            <div class="text-muted small">Destination</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="https://www.google.com/maps/dir/?api=1&origin=H%C3%A5ndv%C3%A6rkerhuset+Aalborg&destination=" 
+                   target="_blank"
+                   class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+                   style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fa fa-map mr-2"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Aalborg+Kloster/Jesper+Nissen/@57.0488524,9.9183841,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9183841!2d57.0488524!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Aalborg+Kloster/Jesper+Nissen/@57.0488524,9.9183841,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9183841!2d57.0488524!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Drengen+og+den+lille+havfrue+af+C.+J.+Bonnesen/Jesper+Nissen/@57.0422025,9.9154277,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9154277!2d57.0422025!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Drengen+og+den+lille+havfrue+af+C.+J.+Bonnesen/Jesper+Nissen/@57.0422025,9.9154277,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9154277!2d57.0422025!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Klatreparken+Aalborg/Jesper+Nissen/@57.0380459,9.897831,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.897831!2d57.0380459!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Klatreparken+Aalborg/Jesper+Nissen/@57.0380459,9.897831,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.897831!2d57.0380459!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Nordkraft/Jesper+Nissen/@57.0465471,9.932137,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.932137!2d57.0465471!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e3</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Nordkraft/Jesper+Nissen/@57.0465471,9.932137,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.932137!2d57.0465471!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e3" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/H%C3%A5ndv%C3%A6rkerhuset+Aalborg/Jesper+Nissen/@57.0509704,9.9176304,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9176304!2d57.0509704!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/H%C3%A5ndv%C3%A6rkerhuset+Aalborg/Jesper+Nissen/@57.0509704,9.9176304,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9176304!2d57.0509704!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e0" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Limfjordsbanen/Jesper+Nissen/@57.0364223,9.9175661,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9175661!2d57.0364223!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Limfjordsbanen/Jesper+Nissen/@57.0364223,9.9175661,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9175661!2d57.0364223!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e2" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Gr%C3%A5br%C3%B8drekloster+Museum/Jesper+Nissen/@57.0472103,9.9219058,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9219058!2d57.0472103!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Gr%C3%A5br%C3%B8drekloster+Museum/Jesper+Nissen/@57.0472103,9.9219058,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9219058!2d57.0472103!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e1" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div><div class="col-lg-12 mb-5">
+    <div class="p-4 rounded-4 shadow-sm d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between" 
+         style="background: linear-gradient(145deg, #f0f4ff, #ffffff); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);">
+        
+        <!-- Info Text -->
+        <div class="mb-3 mb-md-0 pr-md-4" style="max-width: 70%;">
+            <h6 class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.85rem;">Google Maps Location</h6>
+            <div class="d-flex align-items-start">
+                <div class="mr-3 text-primary"><i class="fa fa-map-marker fa-lg"></i></div>
+                <div>
+                    <div class="font-weight-bold text-dark" style="word-break:break-word;">https://www.google.com/maps/dir/Park+of+Music/Jesper+Nissen/@57.0431421,9.9155036,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9155036!2d57.0431421!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e3</div>
+                    <div class="text-muted small">Click below to open this location on Google Maps</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <a href="https://www.google.com/maps/dir/Park+of+Music/Jesper+Nissen/@57.0431421,9.9155036,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1sunknown!2m2!1d9.9155036!2d57.0431421!1m5!1m1!1sChIJ2bJEiBQzSUYRdb0qxzDlCOI!2m2!1d9.9097463!2d57.0361325!3e3" target="_blank" 
+               class="btn btn-gradient text-white px-4 py-2 d-inline-flex align-items-center shadow-sm rounded-pill"
+               style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                <i class="fa fa-map mr-2"></i> Open in Google Maps
+            </a>
+        </div>
+    </div>
+</div></div></div></div>
+</div>
+</div>
+</div>
+</div><footer>
+<div class="container">
+<div class="justify-content-center align-center row"> 
+<div class="col-md-3">
+<ul>
+<li><a class="z2791f2a84cf24004cc7fc5553229d0d7" href="sitemap.html" rel="nofollow">Sitemap</a></li>
+<li><a class="z2791f2a84cf24004cc7fc5553229d0d7" href="privacy-policy.html" rel="nofollow">Privacy Policy</a></li>
+<li><a class="z2791f2a84cf24004cc7fc5553229d0d7" href="about-us.html" rel="nofollow">About Us</a></li>
+</ul></div></div></div>
+<hr>
+</div>
+</footer><script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
 </body>
-
 </html>
